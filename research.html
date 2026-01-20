@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tim Brugarolas | Projects</title>
+    <link rel="stylesheet" href="myStyle.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <script src="tree_script.js" type="text/javascript"></script>
+  </head>
+  <body class="tree_background">
+    <footer>
+      <p>Made by Tim Brugarolas, Inspired by Ultimate Chicken Horse</p>
+    </footer>
+    <main>
+        <!-- Modal structure -->
+        <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Title</h2>
+            <p id="modalBody">Content goes here...</p>
+            <a id="modalLink" href="index.html">Check it out here!</a>
+        </div>
+        </div>
+
+        <a class="openModalBtn" data-title="Self-driving Lab" 
+        data-content="I have worked closely with our engineering associate, Mr. Ito, on programming the 
+                gantry crane that serves as our primary robotic manipulator, enabling sample 
+                transfer between fabrication and measurement stations. We are developing an operation 
+                loop capable of scheduling and parallelizing tasks. Also, we coordinate the crane's 
+                movement with subsystem linear stages for efficient, fully automated handoffs. In all, 
+                the system logs the results for each set of laser parameters, then, depending on the 
+                application a specialized AI algorithm, selects the next candidates through multi-objective 
+                optimization. My contributions to this project will facilitate the search for optimized 
+                surface patternings so that inexpensive, common materials with patterned surfaces can 
+                rival the performance of expensive materials and coatings currently used in industry. [Slides Coming Soon]"
+        data-link="research.html" style="left: 64%; top: 29.5%;">
+        <img src="images/gantry.png" alt="Self-driving icon">
+        <span>Self-Driving Lab</span>
+        </a>
+        <a class="openModalBtn" data-title="Terahertz Time Domain Spectroscopy (THz-TDS)" 
+        data-content="I assisted Dr. Awasthi with investigating the effect of laser patterning on the transmissivity 
+                and reflectivity in the terahertz gap. Due to the large search space of candidate surface 
+                textures, we train a flow matching algorithm to predict the result of laser writing 
+                parameters and leverage novel sampling algorithms to select next best candidates for 
+                testing. The goal is to converge on the laser patterning parameters needed to generate 
+                specific filter responses. My latest work has been on optimizing the systems performance 
+                by analyzing time and frequency domain responses and automating the pipeline for efficiently 
+                curating and benchmarking new samples that are fed back into the machine learning algorithm. 
+                This has enabled us to generate large machine learning friendly datasets with improved 
+                efficiency. My work has contributed to the “Towards Autonomous Discovery of Terahertz 
+                Devices via Integrated Design Fabrication Characterization Loop” presentation given by Dr. Awasthi
+                at the 2026 SPIE Photonics West Conference along with a manuscript in progress. [Slides Coming Soon]"
+        data-link="research.html" style="left: 28.5%; top: 60%;">
+        <img src="images/terahertz.png" alt="terahertz icon">
+        <span>Thz TDS</span>
+        </a>
+        <a class="openModalBtn" data-title="Optical Centrifuge for Isotope Detection" 
+        data-content="I assisted senior scientist Dr. Paeng with investigating the effects of minute changes 
+                in our optical alignment on output beam aberrations, power, and timing. We used a 
+                Frequency-Resolved Optical Gating (FROG) system to measure the delay between split 
+                pulses and the amount our optical system stretched the pulse width to the precision of 
+                tens of femtoseconds. I was also able to derive relationships between small angular 
+                adjustments to the severity of beam aberrations, such as coma, astigmatism, and defocus 
+                to find the optimal angles for alignment. Together, this allowed my mentor and I to 
+                systematically adjust the optical alignment to control the relative delay, pulse widths, 
+                and polarizations of the laser beams while also minimizing aberrations to prepare for the 
+                next stage of the experiment. There, the centrifuge output will be used as input to a 
+                Raman Spectrometer to excite the particle's quantum J state and produce a more detailed 
+                isotope spectrum. This improved resolution can support future technology for fast, accurate 
+                safety checks on the quality of Uranium being produced in the U.S. [Slides Coming Soon]"
+        data-link="research.html" style="left: 65%; top: 55%;">
+        <img src="images/centrifuge.png" alt="centrifuge icon">
+        <span>Optical Centrifuge</span>
+        </a>
+        <a class="openModalBtn" data-title="Turtlebot Interceptor - EECS 106A Final Project"
+        data-content="I explored model predictive control (MPC) for real-time optimal planning and obstacle avoidance. 
+                Our goal was for one TurtleBot to identify and intercept another in an unknown environment. 
+                The seeker TurtleBot used a closed loop controller that combined LIDAR and camera data to 
+                generate a fast, locally consistent mapping of the obstacles, while IMU and magnetic field 
+                measurements were incorporated into Kalman filters for reliable state estimation of both robots. 
+                The biggest challenge in this project was overcoming the sim-to-real gap, which we addressed 
+                by employing the Kalman filtering and adding in the camera feed to improve the reliability of 
+                information being passed into our MPC algorithm and tuning our cost function parameters. My 
+                contributions were mainly with communicating target and obstacle information to the seeker TurtleBot."
+        data-link="https://biancanev.github.io/eecs106a-finalproject/website/index.html" style="position: absolute; left: 45%; top: 22%;">
+        <img src="images/turtlebot_intercept.png" alt="Turtlebot Interceptor icon">
+        <span>Turtlebot Interceptor</span>
+        </a>
+        <!-- <a class="openModalBtn" data-title="Math Explorer"
+        data-content="See the interconnections in algebra as you go from counting to eveything else."
+        data-link="math.html" style="left: 25%; top: 47%;">
+        <img src="images/math.png" alt="Math Explorer icon">
+        <span>Math Explorer</span>
+        </a> -->
+        <a class="openModalBtn" data-title="Eat Everything"
+        data-content="Idea: Scan a reciept and track the contents of your fridge or freezer virtually. Never let food expire again.
+                This project is currently in progress."
+        data-link="research.html" style="left: 25.5%; top: 34%;">
+        <img src="images/eat_everything.png" alt="Eat Everything icon">
+        <span>Eat Everything</span>
+        </a>
+        <!-- <a class="openModalBtn" data-title="PCC Planner"
+        data-content="Idea: Get help navigating the and designing a course schedule to achieve your transfer goals and graduate on time."
+        data-link="research.html">PCC Planner</a>
+        <a class="openModalBtn" data-title="template"
+        data-content=""
+        data-link="research.html">template</a> -->
+    </main>
+    <header>
+        <nav>
+            <h1>Tim Brugarolas</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Brugarolas_Timothy_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                <li><a href="research.html">Research / Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+  </body>
+</html>
