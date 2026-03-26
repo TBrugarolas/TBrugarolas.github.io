@@ -5,57 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tim Brugarolas | Contact</title>
     <link rel="stylesheet" href="myStyle.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
   </head>
-  <body>
+  <body class="flex flex-col min-h-screen bg-cover bg-center" style="background-image:url('images/background_light.png')">
     <header>
-        <nav>
-            <h1>Tim Brugarolas</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="Brugarolas_Timothy_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                <li><a href="research.html">Research / Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="contact-container">
-        <h1 style="font-size: 2.5em; margin: 0px;">It's been real.</h1>
-        <ul class="socials">
-            <li>
-                <a href="https://www.linkedin.com/in/tim-brugarolas/" target="_blank">
-                    <img src="images/linkedin.png" alt="LinkedIn">
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/TBrugarolas" target="_blank">
-                    <img src="images/github.svg" alt="GitHub">
-                </a>
-            </li>
-            <!-- <li>
-                <a href="https://www.facebook.com/tim.brugarolas.3/" target="_blank">
-                    <img src="images/facebook.png" alt="Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@TBrugarolas" target="_blank">
-                    <img src="images/youtube.png" alt="Youtube">
-                </a>
-            </li> -->
-            <li>
-                <a href="https://www.chess.com/member/rubberchickengod" target="_blank">
-                    <img src="images/chess.png" alt="Chess.com">
-                </a>
-            </li>
-            <li>
-                <a href="mailto:tbrugarolas@berkeley.edu">
-                    <img src="images/email.png" alt="Email">
-                </a>
-            </li>
+      <nav class="flex flex-wrap items-center justify-between border-t border-b border-gray-400 px-4 py-2 font-bold">
+        <h1 class="text-2xl md:text-3xl font-bold">Tim Brugarolas</h1>
+        <ul class="flex flex-wrap list-none p-0 m-0">
+          <li class="px-4 py-2"><a href="index.html" class="text-gray-600 hover:text-green-400">Home</a></li>
+          <li class="px-4 py-2"><a href="about.html" class="text-gray-600 hover:text-green-400">About</a></li>
+          <li class="px-4 py-2"><a href="Brugarolas_Timothy_Resume.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-green-400">Resume</a></li>
+          <li class="px-4 py-2"><a href="research.html" class="text-gray-600 hover:text-green-400">Research / Projects</a></li>
+          <li class="px-4 py-2"><a href="contact.html" class="text-gray-600 hover:text-green-400">Contact</a></li>
         </ul>
+      </nav>
+    </header>
+    <main class="flex flex-col items-center justify-center mt-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-8">It's been real.</h1>
+      <ul class="flex gap-4">
+        <li>
+          <a href="https://www.linkedin.com/in/tim-brugarolas/" target="_blank">
+            <img src="images/linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:-translate-y-1 hover:shadow-lg transition" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/TBrugarolas" target="_blank">
+            <img src="images/github.svg" alt="GitHub" class="w-8 h-8 hover:-translate-y-1 hover:shadow-lg transition" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.chess.com/member/rubberchickengod" target="_blank">
+            <img src="images/chess.png" alt="Chess.com" class="w-8 h-8 hover:-translate-y-1 hover:shadow-lg transition" />
+          </a>
+        </li>
+        <li>
+          <a href="mailto:tbrugarolas@berkeley.edu">
+            <img src="images/email.png" alt="Email" class="w-8 h-8 hover:-translate-y-1 hover:shadow-lg transition" />
+          </a>
+        </li>
+      </ul>
     </main>
-    <footer>
+    <footer class="flex justify-center py-4 text-gray-600 text-sm mt-auto">
       <p>Made by Tim Brugarolas</p>
     </footer>
   </body>
