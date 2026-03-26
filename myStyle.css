@@ -191,8 +191,10 @@ footer p {
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  max-width: 500px;
-  width: 90%;
+  max-width: 500px;      /* stays for larger screens */
+  width: 90%;             /* responsive width */
+  max-height: 80vh;       /* NEW: don't exceed 80% of viewport height */
+  overflow-y: auto;       /* NEW: enable vertical scrolling if content is too tall */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: center;
   animation: fadeIn 0.3s;
