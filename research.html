@@ -53,7 +53,7 @@
                 efficiency. My work has contributed to the “Towards Autonomous Discovery of Terahertz 
                 Devices via Integrated Design Fabrication Characterization Loop” presentation given by Dr. Awasthi
                 at the 2026 SPIE Photonics West Conference along with a manuscript in progress. [Slides Coming Soon]"
-        data-link="research.html" style="left: 28.5%; top: 60%;">
+        data-link="research.html" style="left: 24.5%; top: 60%;">
         <img src="images/terahertz.png" alt="terahertz icon">
         <span>Thz TDS</span>
         </a>
@@ -85,7 +85,7 @@
                 by employing the Kalman filtering and adding in the camera feed to improve the reliability of 
                 information being passed into our MPC algorithm and tuning our cost function parameters. My 
                 contributions were mainly with communicating target and obstacle information to the seeker TurtleBot."
-        data-link="https://biancanev.github.io/eecs106a-finalproject/website/index.html" style="position: absolute; left: 45%; top: 22%;">
+        data-link="https://biancanev.github.io/eecs106a-finalproject/website/index.html" style="position: absolute; left: 42%; top: 22%;">
         <img src="images/turtlebot_intercept.png" alt="Turtlebot Interceptor icon">
         <span>Turtlebot Interceptor</span>
         </a>
@@ -98,7 +98,7 @@
         <a class="openModalBtn absolute flex flex-col items-center cursor-grab" data-title="Eat Everything"
         data-content="Idea: Scan a reciept and track the contents of your fridge or freezer virtually. Never let food expire again.
                 This project is currently in progress."
-        data-link="https://eat-everything.app/" style="left: 25.5%; top: 34%;">
+        data-link="https://eat-everything.app/" style="left: 22.5%; top: 34%;">
         <img src="images/eat_everything.png" alt="Eat Everything icon">
         <span>Eat Everything</span>
         </a>
@@ -111,75 +111,50 @@
     </main>
     <header>
       <nav class="relative border-t border-b border-gray-400 px-4 py-2 font-bold z-50">
-        <div class="flex items-center justify-between w-full">
-
-          <!-- Title -->
+        <!-- Header Row -->
+        <div class="flex items-center w-full">
           <h1 class="text-2xl md:text-3xl font-bold">
             Tim Brugarolas
           </h1>
 
-          <!-- Spacer pushes hamburger fully right -->
-          <div class="flex-1"></div>
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex ml-auto list-none p-0 m-0">
+            <li class="px-4 py-2"><a href="index.html" class="text-gray-600 hover:text-green-400">Home</a></li>
+            <li class="px-4 py-2"><a href="about.html" class="text-gray-600 hover:text-green-400">About</a></li>
+            <li class="px-4 py-2"><a href="Brugarolas_Timothy_Resume.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-green-400">Resume</a></li>
+            <li class="px-4 py-2"><a href="research.html" class="text-gray-600 hover:text-green-400">Research / Projects</a></li>
+            <li class="px-4 py-2"><a href="contact.html" class="text-gray-600 hover:text-green-400">Contact</a></li>
+          </ul>
 
-          <!-- Hamburger Button (mobile only) -->
+          <!-- Hamburger (mobile only) -->
           <button
             id="menu-btn"
-            class="md:hidden text-gray-700 focus:outline-none"
+            class="md:hidden ml-auto text-gray-700 focus:outline-none"
             aria-label="Toggle menu"
           >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
 
-        <!-- Navigation Links -->
+        <!-- Mobile Dropdown -->
         <ul
           id="menu"
-          class="absolute right-4 bottom-full mb-2 hidden
-                md:static md:flex
-                flex-col md:flex-row
-                bg-white md:bg-transparent
-                border md:border-0 border-gray-300
-                shadow-md md:shadow-none
-                list-none p-2 md:p-0"
+          class="absolute right-4 bottom-full mt-2 hidden
+                md:hidden
+                flex-col
+                bg-white
+                border border-gray-300
+                shadow-md
+                list-none p-2"
         >
-          <li class="px-4 py-2">
-            <a href="index.html" class="text-gray-600 hover:text-green-400">Home</a>
-          </li>
-          <li class="px-4 py-2">
-            <a href="about.html" class="text-gray-600 hover:text-green-400">About</a>
-          </li>
-          <li class="px-4 py-2">
-            <a
-              href="Brugarolas_Timothy_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="text-gray-600 hover:text-green-400"
-            >
-              Resume
-            </a>
-          </li>
-          <li class="px-4 py-2">
-            <a href="research.html" class="text-gray-600 hover:text-green-400">
-              Research / Projects
-            </a>
-          </li>
-          <li class="px-4 py-2">
-            <a href="contact.html" class="text-gray-600 hover:text-green-400">
-              Contact
-            </a>
-          </li>
+          <li class="px-4 py-2"><a href="index.html" class="text-gray-600 hover:text-green-400">Home</a></li>
+          <li class="px-4 py-2"><a href="about.html" class="text-gray-600 hover:text-green-400">About</a></li>
+          <li class="px-4 py-2"><a href="Brugarolas_Timothy_Resume.pdf" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-green-400">Resume</a></li>
+          <li class="px-4 py-2"><a href="research.html" class="text-gray-600 hover:text-green-400">Research / Projects</a></li>
+          <li class="px-4 py-2"><a href="contact.html" class="text-gray-600 hover:text-green-400">Contact</a></li>
         </ul>
       </nav>
 
